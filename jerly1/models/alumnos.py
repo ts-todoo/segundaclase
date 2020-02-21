@@ -8,9 +8,9 @@ class alumnos(models.Model):
      _description = 'esta clase almacena alumnos'
 
      nombre = fields.Char()
-     apellido = fields.Integer()
-     cedula = fields.Float(compute="_value_pc", store=True)
-     matricula = fields.Text()
+     apellido = fields.Char()
+     matricula= fields.Float(compute="_value_pc", store=True)
+     numero = fields.Integer()
      memo = fields.text ()
         
 #     @api.depends('value')
