@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from odoo import models, fields, api
+from odoo import models, fields
 
 
-class alumnosjerly1(models.Model):
-     _name = 'jerly1.jerly1'
+class alumnos(models.Model):
+     _name = 'alumnos.usuarios'
      _description = 'esta clase almacena alumnos'
 
      nombre = fields.Char()

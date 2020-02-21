@@ -1,17 +1,18 @@
 # -*- coding: utf-8 -*-
 
-# from odoo import models, fields, api
+from odoo import models, fields
 
 
-# class jerly1(models.Model):
-#     _name = 'jerly1.jerly1'
-#     _description = 'jerly1.jerly1'
+class alumnos(models.Model):
+     _name = 'alumnos.usuarios'
+     _description = 'esta clase almacena alumnos'
 
-#     name = fields.Char()
-#     value = fields.Integer()
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
+     nombre = fields.Char()
+     apellido = fields.Integer()
+     cedula = fields.Float(compute="_value_pc", store=True)
+     matricula = fields.Text()
+     memo = fields.text ()
+        
 #     @api.depends('value')
 #     def _value_pc(self):
 #         for record in self:
