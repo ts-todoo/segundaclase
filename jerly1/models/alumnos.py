@@ -2,7 +2,6 @@
 
 from odoo import models, fields
 
-
 class alumnos(models.Model):
      _name = 'alumnos.usuarios'
      _description = 'esta clase almacena alumnos'
@@ -11,7 +10,7 @@ class alumnos(models.Model):
      apellido = fields.Char()
      matricula= fields.Float(compute="_value_pc", store=True)
      numero = fields.Integer()
-     memo = fields.text ()
+     memo = fields.text()
         
 #     @api.depends('value')
 #     def _value_pc(self):
